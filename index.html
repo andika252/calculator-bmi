@@ -9,9 +9,9 @@
     <title>Kalkulator BMI</title>
 </head>
 <body>
+    <h2>Kalkulator BMI</h2><hr>
     <div class="container">
         <div class="column">
-            <h2>Kalkulator BMI</h2><hr>
             <div>
                 <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Yuk, hitung berat badan idealmu di kalkulator BMI !</p>
                 
@@ -31,7 +31,7 @@
         <div class="column">
             <form action="#">
                 <label for="gender">Jenis Kelamin</label><br>
-                <select name="gender" id="gender">
+                <select name="gender" id="gender" onchange="ambilGender()">
                     <option value="l">Laki-Laki</option>
                     <option value="p">Perempuan</option>
                 </select> <br>
@@ -42,8 +42,8 @@
                 <label for="tinggi">Tinggi Badan (cm)</label> <br>
                 <input type="number" id="tinggi" name="tinggi" value="0" min="0">
                 <br> <br>
-                <button onclick="hitungBMI()">Hitung</button>
-                <button onclick="reset()">Reset</button>
+                <button onclick="hitungBMI()" type="button">Hitung</button>
+                <button type="button" onclick="reset()">Reset</button>
             </form>
 
             <div class="hasil" id="hasil">
