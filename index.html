@@ -4,11 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <!-- Menghubungkan style.css -->
+    <link rel="stylesheet" href="style.css"> 
+    <title>Kalkulator BMI</title>
 </head>
 <body>
-    <h1>Hello World !</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae est delectus modi quam a pariatur debitis accusamus corporis repudiandae magni nisi quas at facilis, architecto, illo vitae cumque iste.</p>
+    <div class="container">
+        <div class="column">
+            <h2>Kalkulator BMI</h2><hr>
+            <div>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Yuk, hitung berat badan idealmu di kalkulator BMI !</p>
+                
+                <h4>Keunggulan Fitur</h4>
+                <ol>
+                    <li>Menghitung Berat Badan</li>
+                    <li>Menentukan kategori berat badan ideal atau tidak</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                </ol>
+
+                <p>
+                    Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                </p>
+            </div>
+            <!-- Buat Formulir Isi Data -->
+        </div>
+        <div class="column">
+            <form action="#">
+                <label for="gender">Jenis Kelamin</label><br>
+                <select name="gender" id="gender">
+                    <option value="l">Laki-Laki</option>
+                    <option value="p">Perempuan</option>
+                </select> <br>
+                <label for="beratBadan">Berat Badan (kg)</label> <br>
+                <input type="number" id="beratBadan" name="beratBadan" min="0" value="0"> <br>
+                <label for="usia">Usia (tahun)</label> <br>
+                <input type="number" id="usia" name="usia" value="0" min="0"> <br>
+                <label for="tinggi">Tinggi Badan (cm)</label> <br>
+                <input type="number" id="tinggi" name="tinggi" value="0" min="0">
+                <br> <br>
+                <button onclick="hitungBMI()">Hitung</button>
+                <button onclick="reset()">Reset</button>
+            </form>
+
+            <div class="hasil" id="hasil">
+                <label>Berat badan ideal anda adalah</label> <br>
+                <label id="hasil-hitung"></label> <br>
+                <label id="kesimpulan"></label> <br>
+            </div>
+
+        </div>
+    </div>
+    <!-- Menghubungkan index.js -->
+    <script src="index.js" ></script>
 </body>
 </html>
