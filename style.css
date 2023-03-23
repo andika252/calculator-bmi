@@ -4,11 +4,9 @@ body {
     font-size: 15px;
     margin: 0;
     padding: 0;
-    justify-content: center;
-    align-items: center;
 }
 
-h2 {
+h1 {
     text-align: center;
     justify-content: center;
     margin-top: 50px;
@@ -24,20 +22,21 @@ hr {
 
 /* Membuat Flex Kanan Kiri pada Kolom */
 .container {
-    width: 900px;
+    margin: 30px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 500px;
+    justify-content: center; /* align item horizontally */
+    align-items: center; /* align item vertically */
 }
 
 .column { 
+    background: white;
     width: 450px;
     margin: 15px;
     padding: 10px;
-    justify-content: center;
-    border: groove 2px;
+    border: groove 2px aqua;
     border-radius: 20px;
+    box-shadow: 5px;
+    
 }
 
 /* Style untuk Isi Data */
@@ -51,6 +50,7 @@ input, select {
     margin-right: 100px;
 }
 
+/* css button hitung */
 button.hitung {
     width: 25%;
     margin-left: 100px;
@@ -82,7 +82,7 @@ button.reset {
 
 .hasil {
     text-align: center;
-    border: dashed 2px;
+    border: dashed 2px black;
     border-radius: 20px;
     font-weight: bold;
     padding: 20px;
@@ -103,10 +103,6 @@ div>#kesimpulan {
 @media screen and (max-width:1200px) {
     .column{
         width: 40%;
-    }
-
-    h2 {
-        color: red;
     }
 }
 

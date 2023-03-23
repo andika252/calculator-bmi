@@ -34,15 +34,21 @@ function hitungBMI() {
     //Kesimpulan Berdasarkan Kondisi dari nilai berat2 
     if ( berat2 < 18.5 ) {
          kesimpulan = "Anda Kekurangan Berat Badan";
+         document.getElementById("hasil").style.color = "red" ;
          console.log (kesimpulan) ; 
     } else if ( berat2 >= 18.5 && berat2 <= 24.9 ) {
         kesimpulan = "Berat Badan anda Normal"
+        document.getElementById("hasil").style.color = "green" ;
+
         console.log (kesimpulan) ; 
     } else if ( berat2 >= 25 && berat2 <= 29.9 ) {
         kesimpulan = "Anda Kelebihan Berat Badan" 
+        document.getElementById("hasil").style.color = "orange" ;
+
         console.log (kesimpulan) ; 
     } else {
         kesimpulan = "Anda Mengalami Kegemukan atau Obesitas"
+        document.getElementById("hasil").style.color = "red" ;
         console.log (kesimpulan) ; 
     }
 
