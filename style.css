@@ -2,9 +2,116 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+h4 {
+    text-align: center;
+}
+
+hr {
+    width: 45%;
+}
+
+/* Membuat Flex Kanan Kiri pada Kolom */
+.container {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 500px;
+}
+
+.column { 
+    width: 450px;
+    margin: 15px;
+    padding: 10px;
+    justify-content: center;
+    border: groove 2px;
+    border-radius: 20px;
+}
+
+/* Style untuk Isi Data */
+label {
+    display: inline-block;
+    margin-top: 5px;
+}
+input, select {
+    padding: 3px;
+    width: 95%;
+    margin-right: 100px;
+}
+
+button.hitung {
+    width: 25%;
+    margin-left: 100px;
+    background-color: green ;
+    font-weight: bold; 
+    color: white;
+    border: none ;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.reset {
+    width: 25%;
+    background-color: red;
+    font-weight: bold;
+    color: white ; 
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Style Hasil */
+
+.hasil {
+    display: none; 
+}
+
+.hasil {
+    text-align: center;
+    border: dashed 2px;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#hasil-hitung{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+div>#kesimpulan {
+    font-weight: bold;
 }
 
 
-/* .hasil {
-    display: none;
-} */
+
+
+@media screen and (max-width:1200px) {
+    .column{
+        width: 40%;
+    }
+
+    h2 {
+        color: red;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .column{
+        width: 90%;
+    }
+}

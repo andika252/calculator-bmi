@@ -48,6 +48,7 @@ function hitungBMI() {
 
     kesimpulan2.innerHTML = kesimpulan ; 
 
+    document.getElementById("hasil").style.display = "block" ; 
 
  }
 
@@ -61,5 +62,6 @@ function hitungBMI() {
     // document.getElementsById("hasil-hitung").innerHTML = "0" ; 
     // document.getElementsById("kesimpulan").innerHTML = "0" ; 
 
-    window.location.reload(); 
+    window.location.reload();  
+
  }

@@ -15,7 +15,7 @@
             <div>
                 <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Yuk, hitung berat badan idealmu di kalkulator BMI !</p>
                 
-                <h4>Keunggulan Fitur</h4>
+                <h4><u>Keunggulan Fitur</u></h4>
                 <ol>
                     <li>Menghitung Berat Badan</li>
                     <li>Menentukan kategori berat badan ideal atau tidak</li>
@@ -29,29 +29,30 @@
             <!-- Buat Formulir Isi Data -->
         </div>
         <div class="column">
-            <form action="#">
-                <label for="gender">Jenis Kelamin</label><br>
-                <select name="gender" id="gender" onchange="ambilGender()">
-                    <option value="l">Laki-Laki</option>
-                    <option value="p">Perempuan</option>
-                </select> <br>
-                <label for="beratBadan">Berat Badan (kg)</label> <br>
-                <input type="number" id="beratBadan" name="beratBadan" min="0" value="0"> <br>
-                <label for="usia">Usia (tahun)</label> <br>
-                <input type="number" id="usia" name="usia" value="0" min="0"> <br>
-                <label for="tinggi">Tinggi Badan (cm)</label> <br>
-                <input type="number" id="tinggi" name="tinggi" value="0" min="0">
-                <br> <br>
-                <button onclick="hitungBMI()" type="button">Hitung</button>
-                <button type="button" onclick="reset()">Reset</button>
-            </form>
-
-            <div class="hasil" id="hasil">
-                <label>Berat badan ideal anda adalah</label> <br>
-                <label id="hasil-hitung"></label> <br>
-                <label id="kesimpulan"></label> <br>
+            <div class="formulir">
+                <h4><u>Isi Data</u></h4>
+                <form action="#">
+                    <label for="gender">Jenis Kelamin</label><br>
+                    <select name="gender" id="gender" onchange="ambilGender()">
+                        <option value="l">Laki-Laki</option>
+                        <option value="p">Perempuan</option>
+                    </select> <br>
+                    <label for="beratBadan">Berat Badan (kg)</label> <br>
+                    <input type="number" id="beratBadan" name="beratBadan" min="0" value="0"> <br>
+                    <label for="usia">Usia (tahun)</label> <br>
+                    <input type="number" id="usia" name="usia" value="0" min="0"> <br>
+                    <label for="tinggi">Tinggi Badan (cm)</label> <br>
+                    <input type="number" id="tinggi" name="tinggi" value="0" min="0">
+                    <br> <br>
+                    <button onclick="hitungBMI()" type="button" class="hitung">Hitung</button>
+                    <button type="button" onclick="reset()" class="reset">Reset</button>
+                </form><br>
+                <div class="hasil" id="hasil">
+                    <label>Berat badan ideal anda adalah</label> <br>
+                    <label id="hasil-hitung"></label> <br>
+                    <label id="kesimpulan"></label> <br>
+                </div>
             </div>
-
         </div>
     </div>
     <!-- Menghubungkan index.js -->
